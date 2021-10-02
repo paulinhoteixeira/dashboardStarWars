@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    display: flex;
+}
+
+.lateralMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    width: 250px;
+    height: 100vh;    
+
+    background: #000000;
+    color: #FFF;
+
+}
+
+.lateralMenu ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.lateralMenu ul li img {
+    margin-bottom: 10px;
+}
+
+.lateralMenu p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings svg{
+    margin-right: 10px;
+}
+
+.content{
+    background: #F5F6FA;
+    width: 100%;
+}
+
+.cardsHeader{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    background: #fff;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: 0 20px;
+    height: 132px;
+   
+}
+
+.smallCard{
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.largeCard{
+    width: 464px;
+}
+
+.card .cardContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.card .cardContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardInfo h2{
+    font-size: 5.4rem;
+    font-weight: bold;
+    color: #e8df33;
+}
+
+.cardInfo p{
+    font-size: 1.6rem;
+}
+
+.largeCard .cardContainer .cardContent:first-child{
+    border-right: 1px solid #111;
+}
