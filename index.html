@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 </head>
 
@@ -49,6 +51,7 @@
 
         </div>
         <div class="content">
+
             <div class="cardsHeader">
 
                 <div class="card smallCard">
@@ -90,31 +93,39 @@
                     </div>
                 </div>
             </div>
-            <div class="table">
-                <h5>Últimos filmes</h5>
-                <p>Saiba os últimos lançamentos da marca</p>
-                <table id="filmsTable">
-                    <thead>
-                        <tr>
-                            <th>Títulos</th>
-                            <th>Estréia</th>
-                            <th>Diretor</th>
-                            <th>Episódios</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody">
-                        <tr>
 
-                        </tr>
-                    </tbody>
+            <div class="mainContent">
+                <div class="table">
+                    <h5>Últimos filmes</h5>
+                    <p>Saiba os últimos lançamentos da marca</p>
+                    <table id="filmsTable">
+                        <thead>
+                            <tr>
+                                <th>Títulos</th>
+                                <th>Estréia</th>
+                                <th>Diretor</th>
+                                <th>Episódios</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                
+                <div class="chart">
+                    <div id="piechart" style="width: 400px; height: 400px;"></div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <script>
         feather.replace()
     </script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
